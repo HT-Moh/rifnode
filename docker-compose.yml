@@ -1,0 +1,15 @@
+version: "3.4"
+
+services:
+  rifnode:
+    image: rifnode
+    build:
+      context: .
+    ports:
+      - 4444:4444
+      - 5050:5050
+      - 50505:50505
+      - 30305:30305
+    command: mainnet
+    # volumes:
+    # - .:/usr/src/app:delegated
